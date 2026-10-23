@@ -65,3 +65,9 @@ Timing results apply only to the TT and FF corners listed. They do not show that
 ## Scope
 
 This repository publishes selected project deliverables and verified results, not the full OpenROAD installation.
+## Project Video
+
+A 6-minute walkthrough covering the async FIFO design, verification, the RTL-to-GDSII flow, and timing results:
+https://drive.google.com/file/d/1z4F8CE7KB0DBJrFWUKbg4tWe44hDeFNH/view?usp=drivesdk
+
+
