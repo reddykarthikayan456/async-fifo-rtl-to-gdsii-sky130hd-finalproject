@@ -1,0 +1,51 @@
+
+21. Printing statistics.
+
+=== async_fifo ===
+
+        +----------------------------Count including submodules.
+        |        +-------------------Area including submodules.
+        |        |        +----------Local count, excluding submodules.
+        |        |        |        +-Local area, excluding submodules.
+        |        |        |        | 
+      121        -      121        - wires
+      135        -      135        - wire bits
+       77        -       77        - public wires
+       91        -       91        - public wire bits
+        9        -        9        - ports
+       23        -       23        - port bits
+        -        -        -        - memories
+        -        -        -        - memory bits
+        -        -        -        - processes
+      118  2335.99      118  2335.99 cells
+        1    7.507        1    7.507   sky130_fd_sc_hd__a211oi_1
+        1    8.758        1    8.758   sky130_fd_sc_hd__a221oi_1
+        1    8.758        1    8.758   sky130_fd_sc_hd__a31o_2
+        1    6.256        1    6.256   sky130_fd_sc_hd__a31oi_1
+        2   12.512        2   12.512   sky130_fd_sc_hd__and2_1
+        1    8.758        1    8.758   sky130_fd_sc_hd__and4_1
+        2    10.01        2    10.01   sky130_fd_sc_hd__buf_2
+        1   11.261        1   11.261   sky130_fd_sc_hd__buf_6
+       31  775.744       31  775.744   sky130_fd_sc_hd__dfrtp_1
+        1   26.275        1   26.275   sky130_fd_sc_hd__dfstp_2
+       32  960.922       32  960.922   sky130_fd_sc_hd__edfxtp_1
+        4   50.048        4   50.048   sky130_fd_sc_hd__ha_1
+        1    3.754        1    3.754   sky130_fd_sc_hd__inv_1
+        8   90.086        8   90.086   sky130_fd_sc_hd__mux2_2
+        7  183.926        7  183.926   sky130_fd_sc_hd__mux4_1
+        1   22.522        1   22.522   sky130_fd_sc_hd__mux4_2
+        4   15.014        4   15.014   sky130_fd_sc_hd__nand2_1
+        1    6.256        1    6.256   sky130_fd_sc_hd__nand2b_1
+        1    5.005        1    5.005   sky130_fd_sc_hd__nand3_1
+        2    7.507        2    7.507   sky130_fd_sc_hd__nor2_1
+        2   12.512        2   12.512   sky130_fd_sc_hd__nor2b_1
+        1    5.005        1    5.005   sky130_fd_sc_hd__nor3_1
+        2   15.014        2   15.014   sky130_fd_sc_hd__nor3b_1
+        1    6.256        1    6.256   sky130_fd_sc_hd__o22ai_1
+        1    6.256        1    6.256   sky130_fd_sc_hd__or3_1
+        2   17.517        2   17.517   sky130_fd_sc_hd__xnor2_1
+        6    52.55        6    52.55   sky130_fd_sc_hd__xor2_1
+
+   Chip area for module '\async_fifo': 2335.990400
+     of which used for sequential elements: 1762.940800 (75.47%)
+
