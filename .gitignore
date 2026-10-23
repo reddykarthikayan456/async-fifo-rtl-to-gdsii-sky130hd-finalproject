@@ -1,0 +1,6 @@
+*.tmp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+simulation/async_fifo_sim

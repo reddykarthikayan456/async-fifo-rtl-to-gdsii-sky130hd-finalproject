@@ -1,0 +1,134 @@
+OpenROAD unknown 
+Features included (+) or not (-): -GPU +GUI -Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+===== SETUP (max) =====
+Startpoint: rd_en (input port clocked by rd_clock)
+Endpoint: empty$_DFF_PN1_ (rising edge-triggered flip-flop clocked by rd_clock)
+Path Group: rd_clock
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock rd_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   1.00    1.00 ^ input external delay
+   0.00    1.00 ^ rd_en (in)
+   0.44    1.44 ^ input9/X (sky130_fd_sc_hd__clkdlybuf4s50_1)
+   0.74    2.19 ^ _52_/Y (sky130_fd_sc_hd__nor2b_1)
+   0.29    2.48 ^ _95_/COUT (sky130_fd_sc_hd__ha_1)
+   0.17    2.65 ^ _97_/COUT (sky130_fd_sc_hd__ha_1)
+   0.28    2.93 ^ _46_/X (sky130_fd_sc_hd__xor2_1)
+   0.09    3.02 v _87_/Y (sky130_fd_sc_hd__nor2_1)
+   0.28    3.30 ^ _92_/Y (sky130_fd_sc_hd__a221oi_1)
+   0.07    3.37 v _93_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.00    3.37 v empty$_DFF_PN1_/D (sky130_fd_sc_hd__dfstp_2)
+           3.37   data arrival time
+
+  12.00   12.00   clock rd_clock (rise edge)
+   0.00   12.00   clock network delay (ideal)
+   0.00   12.00   clock reconvergence pessimism
+          12.00 ^ empty$_DFF_PN1_/CLK (sky130_fd_sc_hd__dfstp_2)
+  -0.09   11.91   library setup time
+          11.91   data required time
+---------------------------------------------------------
+          11.91   data required time
+          -3.37   data arrival time
+---------------------------------------------------------
+           8.54   slack (MET)
+
+
+Startpoint: wr_en (input port clocked by wr_clock)
+Endpoint: mem[1][3]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by wr_clock)
+Path Group: wr_clock
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock wr_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   1.00    1.00 ^ input external delay
+   0.00    1.00 ^ wr_en (in)
+   0.46    1.46 ^ input11/X (sky130_fd_sc_hd__clkdlybuf4s50_1)
+   0.22    1.67 ^ _51_/Y (sky130_fd_sc_hd__nor2b_1)
+   0.12    1.80 v _72_/Y (sky130_fd_sc_hd__nand2_1)
+   1.06    2.86 ^ _75_/Y (sky130_fd_sc_hd__nor3b_1)
+   0.00    2.86 ^ mem[1][3]$_DFFE_PP_/DE (sky130_fd_sc_hd__edfxtp_1)
+           2.86   data arrival time
+
+  10.00   10.00   clock wr_clock (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+          10.00 ^ mem[1][3]$_DFFE_PP_/CLK (sky130_fd_sc_hd__edfxtp_1)
+  -0.40    9.60   library setup time
+           9.60   data required time
+---------------------------------------------------------
+           9.60   data required time
+          -2.86   data arrival time
+---------------------------------------------------------
+           6.74   slack (MET)
+
+
+===== HOLD (min) =====
+Startpoint: wgray_r1[1]$_DFF_PN0_
+            (rising edge-triggered flip-flop clocked by rd_clock)
+Endpoint: wgray_r2[1]$_DFF_PN0_
+          (rising edge-triggered flip-flop clocked by rd_clock)
+Path Group: rd_clock
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock rd_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ wgray_r1[1]$_DFF_PN0_/CLK (sky130_fd_sc_hd__dfrtp_1)
+   0.30    0.30 ^ wgray_r1[1]$_DFF_PN0_/Q (sky130_fd_sc_hd__dfrtp_1)
+   0.00    0.30 ^ wgray_r2[1]$_DFF_PN0_/D (sky130_fd_sc_hd__dfrtp_1)
+           0.30   data arrival time
+
+   0.00    0.00   clock rd_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00   clock reconvergence pessimism
+           0.00 ^ wgray_r2[1]$_DFF_PN0_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  -0.04   -0.04   library hold time
+          -0.04   data required time
+---------------------------------------------------------
+          -0.04   data required time
+          -0.30   data arrival time
+---------------------------------------------------------
+           0.34   slack (MET)
+
+
+Startpoint: rgray_w1[0]$_DFF_PN0_
+            (rising edge-triggered flip-flop clocked by wr_clock)
+Endpoint: rgray_w2[0]$_DFF_PN0_
+          (rising edge-triggered flip-flop clocked by wr_clock)
+Path Group: wr_clock
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock wr_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ rgray_w1[0]$_DFF_PN0_/CLK (sky130_fd_sc_hd__dfrtp_1)
+   0.29    0.29 ^ rgray_w1[0]$_DFF_PN0_/Q (sky130_fd_sc_hd__dfrtp_1)
+   0.00    0.29 ^ rgray_w2[0]$_DFF_PN0_/D (sky130_fd_sc_hd__dfrtp_1)
+           0.29   data arrival time
+
+   0.00    0.00   clock wr_clock (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00   clock reconvergence pessimism
+           0.00 ^ rgray_w2[0]$_DFF_PN0_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  -0.04   -0.04   library hold time
+          -0.04   data required time
+---------------------------------------------------------
+          -0.04   data required time
+          -0.29   data arrival time
+---------------------------------------------------------
+           0.33   slack (MET)
+
+
+===== WNS / TNS =====
+wns max 0.00
+tns max 0.00

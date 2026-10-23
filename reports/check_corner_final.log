@@ -1,0 +1,24 @@
+OpenROAD unknown 
+Features included (+) or not (-): -GPU +GUI -Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+=== sky130_fd_sc_hd__ss_n40C_1v40.lib ===
+worst slack max 1.39
+worst slack min 1.28
+tns max 0.00
+OpenROAD unknown 
+Features included (+) or not (-): -GPU +GUI -Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+=== sky130_fd_sc_hd__tt_025C_1v80.lib ===
+worst slack max 7.36
+worst slack min 0.35
+tns max 0.00
+OpenROAD unknown 
+Features included (+) or not (-): -GPU +GUI -Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+=== sky130_fd_sc_hd__ff_n40C_1v95.lib ===
+worst slack max 7.99
+worst slack min 0.22
+tns max 0.00

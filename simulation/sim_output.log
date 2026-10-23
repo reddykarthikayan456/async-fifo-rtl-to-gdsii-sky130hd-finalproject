@@ -1,0 +1,10 @@
+VCD info: dumpfile async_fifo.vcd opened for output.
+Starting asynchronous FIFO test
+After writes: full=1
+Read data = 10, expected = 00000010
+Read data = 11, expected = 00000011
+Read data = 12, expected = 00000012
+Read data = 13, expected = 00000013
+After reads: empty=1
+FIFO test completed
+tb_async_fifo.v:86: $finish called at 294000 (1ps)

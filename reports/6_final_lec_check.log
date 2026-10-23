@@ -1,0 +1,91 @@
+[2026-10-23 05:12:57.615] [miter_logger] [info] MiterStrategy::run starting
+[2026-10-23 05:12:57.615] [miter_logger] [info] Collecting POs for design 0: async_fifo
+
+[2026-10-23 05:12:57.619] [miter_logger] [info] Collected 77 PIs for design 0
+
+[2026-10-23 05:12:57.619] [miter_logger] [info] Collected 202 POs for design 0
+
+[2026-10-23 05:12:57.619] [miter_logger] [info] design 0 PI summary by model/term (77 total terminals, 9 unique rows):
+| Model                     | Term   | Count |
+|---------------------------|--------|-------|
+| sky130_fd_sc_hd__edfxtp_1 | Q      |    32 |
+| sky130_fd_sc_hd__dfrtp_1  | Q      |    31 |
+| async_fifo                | din    |     8 |
+| async_fifo                | rd_clk |     1 |
+| async_fifo                | rd_en  |     1 |
+| async_fifo                | rst_n  |     1 |
+| async_fifo                | wr_clk |     1 |
+| async_fifo                | wr_en  |     1 |
+| sky130_fd_sc_hd__dfstp_2  | Q      |     1 |
+
+[2026-10-23 05:12:57.619] [miter_logger] [info] design 0 PO summary by model/term (202 total terminals, 12 unique rows):
+| Model                     | Term    | Count |
+|---------------------------|---------|-------|
+| sky130_fd_sc_hd__edfxtp_1 | CLK     |    32 |
+| sky130_fd_sc_hd__edfxtp_1 | D       |    32 |
+| sky130_fd_sc_hd__edfxtp_1 | DE      |    32 |
+| sky130_fd_sc_hd__dfrtp_1  | CLK     |    31 |
+| sky130_fd_sc_hd__dfrtp_1  | D       |    31 |
+| sky130_fd_sc_hd__dfrtp_1  | RESET_B |    31 |
+| async_fifo                | dout    |     8 |
+| async_fifo                | empty   |     1 |
+| async_fifo                | full    |     1 |
+| sky130_fd_sc_hd__dfstp_2  | CLK     |     1 |
+| sky130_fd_sc_hd__dfstp_2  | D       |     1 |
+| sky130_fd_sc_hd__dfstp_2  | SET_B   |     1 |
+
+[2026-10-23 05:12:57.619] [miter_logger] [info] Collecting POs for design 1: async_fifo
+
+[2026-10-23 05:12:57.621] [miter_logger] [info] size of common inputs: 77
+[2026-10-23 05:12:57.621] [miter_logger] [info] size of diff0 inputs: 0
+[2026-10-23 05:12:57.621] [miter_logger] [info] size of diff1 inputs: 0
+[2026-10-23 05:12:57.621] [miter_logger] [info] Collected 77 PIs for design 1
+
+[2026-10-23 05:12:57.621] [miter_logger] [info] Collected 202 POs for design 1
+
+[2026-10-23 05:12:57.621] [miter_logger] [info] design 1 PI summary by model/term (77 total terminals, 9 unique rows):
+| Model                     | Term   | Count |
+|---------------------------|--------|-------|
+| sky130_fd_sc_hd__edfxtp_1 | Q      |    32 |
+| sky130_fd_sc_hd__dfrtp_1  | Q      |    31 |
+| async_fifo                | din    |     8 |
+| async_fifo                | rd_clk |     1 |
+| async_fifo                | rd_en  |     1 |
+| async_fifo                | rst_n  |     1 |
+| async_fifo                | wr_clk |     1 |
+| async_fifo                | wr_en  |     1 |
+| sky130_fd_sc_hd__dfstp_2  | Q      |     1 |
+
+[2026-10-23 05:12:57.621] [miter_logger] [info] design 1 PO summary by model/term (202 total terminals, 12 unique rows):
+| Model                     | Term    | Count |
+|---------------------------|---------|-------|
+| sky130_fd_sc_hd__edfxtp_1 | CLK     |    32 |
+| sky130_fd_sc_hd__edfxtp_1 | D       |    32 |
+| sky130_fd_sc_hd__edfxtp_1 | DE      |    32 |
+| sky130_fd_sc_hd__dfrtp_1  | CLK     |    31 |
+| sky130_fd_sc_hd__dfrtp_1  | D       |    31 |
+| sky130_fd_sc_hd__dfrtp_1  | RESET_B |    31 |
+| async_fifo                | dout    |     8 |
+| async_fifo                | empty   |     1 |
+| async_fifo                | full    |     1 |
+| sky130_fd_sc_hd__dfstp_2  | CLK     |     1 |
+| sky130_fd_sc_hd__dfstp_2  | D       |     1 |
+| sky130_fd_sc_hd__dfstp_2  | SET_B   |     1 |
+
+[2026-10-23 05:12:57.621] [miter_logger] [info] normalizeInputs: starting
+[2026-10-23 05:12:57.621] [miter_logger] [info] size of common inputs: 77
+[2026-10-23 05:12:57.621] [miter_logger] [info] size of diff0 inputs: 0
+[2026-10-23 05:12:57.621] [miter_logger] [info] size of diff1 inputs: 0
+[2026-10-23 05:12:57.621] [miter_logger] [info] normalizeOutputs: starting
+[2026-10-23 05:12:57.621] [miter_logger] [info] size of common outputs: 202
+[2026-10-23 05:12:57.621] [miter_logger] [info] size of diff0 outputs: 0
+[2026-10-23 05:12:57.621] [miter_logger] [info] size of diff1 outputs: 0
+[2026-10-23 05:12:57.621] [miter_logger] [info] size of PIs in circuit 0: 77
+[2026-10-23 05:12:57.621] [miter_logger] [info] size of PIs in circuit 1: 77
+[2026-10-23 05:12:57.621] [miter_logger] [info] size of POs in circuit 0: 202
+[2026-10-23 05:12:57.621] [miter_logger] [info] size of POs in circuit 1: 202
+[2026-10-23 05:12:57.627] [miter_logger] [info] Building miter expression
+[2026-10-23 05:12:57.627] [miter_logger] [info] Finished building miter expression
+[2026-10-23 05:12:57.627] [miter_logger] [info] Starting solver
+[2026-10-23 05:12:57.627] [miter_logger] [info] SAT solver finished: UNSAT
+[2026-10-23 05:12:57.627] [miter_logger] [info] Circuits are IDENTICAL
